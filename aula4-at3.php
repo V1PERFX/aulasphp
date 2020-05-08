@@ -1,25 +1,35 @@
 <?php
+//falta terminar
 class Carro{
-    private string $modelo, $cor;
-    private int $ano, $veloMax, $veloAtual;
-    
-    function acelerar(int $a) {
-        $this->veloAtual = $a += 10;
+    private string $modelo = "Sandero";
+    private string $cor= "Preta";
+    private int $ano = 2014;
+    private int $veloMax = 200;
+    private int $veloAtual = 0;
+
+    public function acelerar() {
+        if($this->veloAtual >= $this->veloMax){
+            $this->veloAtual = $this->veloMax;
+        } else {
+            $this->veloAtual += 10;
+        }  
     }
 
     function exibirVelo() {
         return $this->veloAtual;
     }
 
-    function acidente(){
-        $this->veloMax = 150;
-        
+    public function freiar() {
+        $this->veloAtual = 0;
     }
 }
 
 $pessoa = new Carro();
-$pessoa->acelerar(85);
-echo "O carro  acelerou e a velocidade atual é : {$pessoa->exibirVelo()}km/h" . "<br />";
-echo "--------------<br />";
+echo $pessoa->exibirVelo() . "<br/>";
+
+$pessoa->acelerar();
+$pessoa->acelerar();
+
+echo $pessoa->exibirVelo() . "<br/>";
 
 ?>
