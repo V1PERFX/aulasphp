@@ -1,5 +1,4 @@
 <?php
-//falta terminar
 class Car{
     private string $modelo = "Sandero";
     private string $cor= "Preta";
