@@ -41,6 +41,11 @@ class PessoaFisica extends Cliente {
     public function ValidarCPF() {
         //programar
     }
+
+    public function __toString()
+    {
+        return __CLASS__;
+    }
     
 }
 
@@ -62,4 +67,7 @@ class PessoaJuridica extends Cliente {
     }
 
 }
+
+$pessoa = new PessoaFisica("Rafael", "Sabia das Paineiras", "São Paulo", "SP", 4851480, 12345678912, 1234567891, "M", "16/04/1992");
+$empresa = new PessoaJuridica("viperfx", "Sabia das Paineiras", "São Paulo", "SP", 4851480, 123456789, "Inscrição", "viper LTDA.");
 ?>
