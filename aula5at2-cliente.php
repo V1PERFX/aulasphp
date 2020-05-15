@@ -41,11 +41,6 @@ class PessoaFisica extends Cliente {
     public function ValidarCPF() {
         //programar
     }
-
-    public function __toString()
-    {
-        return __CLASS__;
-    }
     
 }
 
