@@ -1,6 +1,6 @@
 <?php
 //falta terminar
-class Carro{
+class Car{
     private string $modelo = "Sandero";
     private string $cor= "Preta";
     private int $ano = 2014;
@@ -24,7 +24,7 @@ class Carro{
     }
 }
 
-$pessoa = new Carro();
+$pessoa = new Car();
 echo $pessoa->exibirVelo() . "<br/>";
 
 $pessoa->acelerar();

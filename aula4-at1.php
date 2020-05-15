@@ -53,15 +53,15 @@ class Prop {
 
     public function exibeDados2(){
         echo "Nome: {$this->nome2}" . "<br />" .
-        "Nome: {$this->cpf2}" . "<br />" .
-        "Nome: {$this->rg2}" . "<br />" .
-        "Nome: {$this->nasci2}" . "<br />" .
-        "Nome: {$this->rua2}" . "<br />" .
-        "Nome: {$this->bairro2}" . "<br />" .
-        "Nome: {$this->cidade2}" . "<br />" .
-        "Nome: {$this->estado2}" . "<br />" .
-        "Nome: {$this->cep2}" . "<br />" .
-        "Nome: {$this->complemento2}" . "<br />";
+        "CPF: {$this->cpf2}" . "<br />" .
+        "RG: {$this->rg2}" . "<br />" .
+        "Data de Nascimento: {$this->nasci2}" . "<br />" .
+        "Rua: {$this->rua2}" . "<br />" .
+        "Bairro: {$this->bairro2}" . "<br />" .
+        "Cidade: {$this->cidade2}" . "<br />" .
+        "Estado: {$this->estado2}" . "<br />" .
+        "CEP: {$this->cep2}" . "<br />" .
+        "Complemento: {$this->complemento2}" . "<br />";
     }
     
 }
