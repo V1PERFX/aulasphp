@@ -19,19 +19,20 @@
     <form action="results/resultado4.php" method="post" class="m">
         <p>
             <label>Digite o primeiro valor:</label>
-            <input type="text" name="valor1" required>
+            <input type="number" name="valor1" required>
         </p>
         <p>
             <label>Digite o segundo valor:</label>
-            <input type="text" name="valor2" required>
+            <input type="number" name="valor2" required>
         </p>
         <p>
+            <label>Escolha a operação:</label><br/>
             <input type="radio" name="operacao" value="a"> Adição<br>
             <input type="radio" name="operacao" value="s"> Subtração<br>
             <input type="radio" name="operacao" value="m"> Multiplicação<br>
             <input type="radio" name="operacao" value="d"> Divisão
         </p>
-        <button class="btn btn-primary" type="submit">Enviar</button>
+        <button class="btn btn-primary" type="submit">Ver Resultado</button>
     </form>
 
 </body>
