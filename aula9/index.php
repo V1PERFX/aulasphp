@@ -1,4 +1,10 @@
 <?php
+session_start();
+
+if(!isset($_SESSION["id"])){
+    header("Location: login.php");
+    exit;
+}
     include "services/conexao.php";
     include "classes/Usuario.php";
     $usu = new Usuario($servidor, $usuario, $senha);
@@ -32,6 +38,9 @@
                         foreach($listaDeUsuarios[$i] as $valor){
                             echo "<td> $valor </td>";
                         }
+        ?>
+                <td><a href="excluir.php?idDl=<?= $listaDeUsuarios[$i]["id"]?>">excluir</a></td>
+        <?php
                     echo "</tr>";
                 }
             }

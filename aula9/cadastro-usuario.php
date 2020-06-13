@@ -1,4 +1,9 @@
 <?php
+session_start();
+if(!isset($_SESSION["id"])){
+    header("Location:login.php");
+    exit;
+}
     include "services/conexao.php";
     include "classes/Usuario.php";
     $usu = new Usuario($servidor, $usuario, $senha);
